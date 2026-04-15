@@ -3,185 +3,239 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidad — Volume Control</title>
+  <title>Política de Privacidad — GestorApp</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0d1b2a;
-      color: #edf2f7;
-      min-height: 100vh;
-      padding: 48px 24px 80px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.7;
     }
 
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
+    header {
+      background: linear-gradient(135deg, #0d1b3e 0%, #1a2f6e 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.7);
     }
 
     .badge {
       display: inline-block;
-      background: #2d1b5e;
-      color: #bfa8ff;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .06em;
-      padding: 4px 12px;
-      border-radius: 999px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: 28px;
+      margin-top: 16px;
+      background: #c9a227;
+      color: #1a1a2e;
+      font-size: 0.75rem;
       font-weight: 700;
-      color: #fff;
-      line-height: 1.2;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      color: #7b93b5;
-      margin-bottom: 48px;
-    }
-
-    .card {
-      background: #142030;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 14px;
       border-radius: 20px;
-      padding: 28px;
-      margin-bottom: 16px;
     }
 
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 14px;
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
     }
 
-    .icon {
-      width: 36px;
-      height: 36px;
-      background: #1a2d42;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      flex-shrink: 0;
+    section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
 
     h2 {
-      font-size: 15px;
-      font-weight: 600;
-      color: #edf2f7;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0d1b3e;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
-    p {
-      font-size: 14px;
-      color: #7b93b5;
-      line-height: 1.7;
+    h2 .icon {
+      width: 32px;
+      height: 32px;
+      background: #eef1ff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
     }
 
-    .divider {
-      height: 1px;
-      background: #1c2e42;
-      margin: 48px 0 24px;
+    p { font-size: 0.95rem; color: #444; margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
     }
 
-    .footer {
-      font-size: 13px;
-      color: #7b93b5;
-      text-align: center;
+    ul li {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 6px;
     }
 
-    .footer a {
-      color: #8b5cf6;
-      text-decoration: none;
-    }
+    a { color: #1a2f6e; font-weight: 600; }
 
     .highlight {
-      color: #8b5cf6;
-      font-weight: 600;
+      background: #f0f4ff;
+      border-left: 4px solid #c9a227;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #999;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
 
-    <div class="badge">buttonfix.app</div>
-    <h1>Política de Privacidad</h1>
-    <p class="subtitle">Volume Control · Última actualización: abril 2025</p>
+<header>
+  <h1>Política de Privacidad</h1>
+  <p>GestorApp — Facturas y Control</p>
+  <span class="badge">Versión 1.0.0</span>
+</header>
 
-    <div class="card">
-      <div class="card-header">
-        <div class="icon">🔒</div>
-        <h2>Sin recolección de datos</h2>
-      </div>
-      <p>
-        Esta aplicación <span class="highlight">no recopila, almacena ni comparte</span>
-        ningún dato personal. No tenemos acceso a tu nombre, correo, ubicación,
-        contactos ni ningún otro dato identificable.
-      </p>
-    </div>
+<main>
 
-    <div class="card">
-      <div class="card-header">
-        <div class="icon">📱</div>
-        <h2>Datos locales en tu dispositivo</h2>
-      </div>
-      <p>
-        La app guarda tus preferencias de configuración (qué tipos de volumen
-        mostrar en la notificación) únicamente en tu dispositivo, usando
-        almacenamiento local estándar de Android. Estos datos nunca salen de tu teléfono.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <div class="icon">☕</div>
-        <h2>Compras integradas</h2>
-      </div>
-      <p>
-        Los pagos de apoyo al desarrollador son procesados exclusivamente por
-        <span class="highlight">Google Play Billing</span>. Esta app no tiene
-        acceso a tus datos de pago, tarjeta ni información de facturación.
-        Todo es manejado directamente por Google.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <div class="icon">🔔</div>
-        <h2>Permisos</h2>
-      </div>
-      <p>
-        La app solicita permiso de notificaciones para mostrar el control de
-        volumen en la barra de estado. No accede a tu cámara, micrófono,
-        contactos, ubicación ni ningún otro dato sensible.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <div class="icon">📢</div>
-        <h2>Sin publicidad</h2>
-      </div>
-      <p>
-        Volume Control no contiene anuncios de ningún tipo y no utiliza
-        SDKs de publicidad ni analíticas de terceros.
-      </p>
-    </div>
-
-    <div class="divider"></div>
-
-    <p class="footer">
-      ¿Preguntas? Escribinos a
-      <a href="mailto:matibarrios19982@gmail.com">matibarrios19982@gmail.com</a>
+  <!-- Intro -->
+  <section>
+    <h2><span class="icon">📋</span>Introducción</h2>
+    <p>
+      Esta Política de Privacidad describe cómo <strong>MotoMoto Studio</strong> ("nosotros", "nuestro")
+      recopila, usa y protege la información en relación con la aplicación móvil
+      <strong>GestorApp — Facturas y Control</strong> (la "App"), disponible en Google Play Store.
     </p>
+    <p>
+      Al usar la App, aceptás los términos de esta política.
+      Si no estás de acuerdo, por favor no uses la App.
+    </p>
+    <p>Última actualización: <strong>Abril 2026</strong></p>
+  </section>
 
-  </div>
+  <!-- Datos que recopilamos -->
+  <section>
+    <h2><span class="icon">💾</span>Datos que recopilamos</h2>
+    <p>La App almacena la siguiente información <strong>únicamente en tu dispositivo</strong> (sin servidores externos):</p>
+    <ul>
+      <li>Presupuestos y facturas que creás (cliente, productos, importes, estados)</li>
+      <li>Información de clientes que ingresás manualmente (nombre, teléfono, dirección, notas)</li>
+      <li>Configuraciones de la App</li>
+    </ul>
+    <div class="highlight">
+      🔒 Todos estos datos se guardan localmente en tu dispositivo usando una base de datos segura (Room/SQLite).
+      <strong>No enviamos ningún dato tuyo a servidores externos.</strong>
+    </div>
+  </section>
+
+  <!-- Compras -->
+  <section>
+    <h2><span class="icon">💳</span>Compras y facturación</h2>
+    <p>
+      La App ofrece compras opcionales (plan mensual y plan lifetime) procesadas exclusivamente
+      a través de <strong>Google Play Billing</strong>.
+    </p>
+    <p>
+      No almacenamos ni procesamos datos de tarjetas de crédito. Toda la información de pago
+      es gestionada directamente por Google según su propia
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad</a>.
+    </p>
+  </section>
+
+  <!-- No recopilamos -->
+  <section>
+    <h2><span class="icon">🚫</span>Lo que NO hacemos</h2>
+    <ul>
+      <li>No recopilamos datos de uso ni analíticas</li>
+      <li>No compartimos tus datos con terceros</li>
+      <li>No mostramos publicidad</li>
+      <li>No accedemos a tu cámara, micrófono ni contactos del sistema</li>
+      <li>No rastreamos tu ubicación</li>
+    </ul>
+  </section>
+
+  <!-- Permisos -->
+  <section>
+    <h2><span class="icon">🔑</span>Permisos de la App</h2>
+    <p>La App solicita únicamente los permisos necesarios para su funcionamiento:</p>
+    <ul>
+      <li><strong>Almacenamiento</strong> — para exportar presupuestos en formato PDF</li>
+      <li><strong>Internet</strong> — exclusivamente para procesar compras a través de Google Play Billing</li>
+    </ul>
+  </section>
+
+  <!-- PDFs exportados -->
+  <section>
+    <h2><span class="icon">📄</span>Exportación de PDFs</h2>
+    <p>
+      Los presupuestos exportados en formato PDF se generan localmente en tu dispositivo y se comparten
+      a través de las apps que vos elijas (WhatsApp, email, etc.). No tenemos acceso a esos archivos
+      una vez que los compartís.
+    </p>
+  </section>
+
+  <!-- Menores -->
+  <section>
+    <h2><span class="icon">👶</span>Menores de edad</h2>
+    <p>
+      Esta App no está destinada a personas menores de 13 años.
+      No recopilamos conscientemente información de menores de 13 años.
+    </p>
+  </section>
+
+  <!-- Cambios -->
+  <section>
+    <h2><span class="icon">🔄</span>Cambios a esta política</h2>
+    <p>
+      Podemos actualizar esta Política de Privacidad ocasionalmente.
+      Te notificaremos mediante una actualización en la App o en esta página.
+      Te recomendamos revisarla periódicamente.
+    </p>
+  </section>
+
+  <!-- Contacto -->
+  <section>
+    <h2><span class="icon">✉️</span>Contacto</h2>
+    <p>Si tenés preguntas sobre esta política, podés contactarnos en:</p>
+    <p>
+      📧 <a href="mailto:motomotostudio99@gmail.com">motomotostudio99@gmail.com</a>
+    </p>
+    <p>Desarrollador: <strong>MotoMoto Studio</strong></p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 MotoMoto Studio · GestorApp — Facturas y Control · Todos los derechos reservados
+</footer>
+
 </body>
 </html>
